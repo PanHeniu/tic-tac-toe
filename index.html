@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="selection-container">
+        <div class="selection-items">
+            <div class="title">TIC-TAC-TOE</div>
+            <div class="title2">Enter the players' names</div>
+            <div class="selection-item">
+                <label>Player 1:</label>
+                <input type="text" id="player1" class="player-input">
+            </div>
+            <div class="selection-item">
+                <label>Player 2:</label>
+                <input type="text" id="player2" class="player-input">
+            </div>
+        </div>
+
+        <div class="selection-buttons">
+            <div class="title2">Player 1 will play as:</div>
+            <button class="player-button" id="o-button" value="O">O</button>
+            <button class="player-button" value="X">X</button>
+        </div>
+    </div>
+    <div id="gameboard-container">
+        <div class="title">TIC-TAC-TOE</div>
+        <div id="gameboard-item-container">
+            <div class="gameboard-item" data-box="0" data-mark=""></div>
+            <div class="gameboard-item" data-box="1" data-mark=""></div>
+            <div class="gameboard-item" data-box="2" data-mark=""></div>
+    
+            <div class="gameboard-item" data-box="3" data-mark=""></div>
+            <div class="gameboard-item" data-box="4" data-mark=""></div>
+            <div class="gameboard-item" data-box="5" data-mark=""></div>
+    
+            <div class="gameboard-item" data-box="6" data-mark=""></div>
+            <div class="gameboard-item" data-box="7" data-mark=""></div>
+            <div class="gameboard-item" data-box="8" data-mark=""></div>
+        </div>
+    </div>
+
+    <div id="results-container">
+        <div id="results" class="title2"></div>
+        <button id="reset-button">Play Again</button>
+    </div>
+</body>
+</html>
